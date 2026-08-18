@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> </title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Zoho SDK -->
+  <script src="https://live.zwidgets.com/js-sdk/1.2/ZohoEmbededAppSDK.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h2>Lead Year Status View</h2>
+    <!-- Year Dropdown Filter -->
+    <div class="filter-section">
+      <label for="yearSelect">Select Year: </label>
+      <select id="yearSelect">
+        <!-- Years will be populated dynamically via JS -->
+      </select>
+      <label for="ownerSelect" style="margin-left:15px;">Select Owner: </label>
+      <select id="ownerSelect">
+        <option value="All">All Owners</option>
+        <!-- Owners will be populated dynamically via JS -->
+      </select>
+    </div>
+    <!-- Status Accordion (each status row, leads expand right below it) -->
+    <div id="statusContainer" class="status-container">
+      <p class="loading-text">Loading Leads...</p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
